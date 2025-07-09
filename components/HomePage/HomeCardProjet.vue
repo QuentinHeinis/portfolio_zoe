@@ -16,7 +16,7 @@ defineProps({
     <div
       class="z-10 bg-black/70 flex flex-col items-center justify-center relative w-full h-full gap-10"
     >
-      <div class="marquee text-5xl md:text-7xl lg:text-9xl uppercase">
+      <div class="marquee text-5xl md:text-7xl lg:text-9xl uppercase text-bgColor">
         <h3 class="flex gap-24">{{ nom }}</h3>
         <span aria-hidden class="ml-10 md:ml-20 uppercase">{{ nom }}</span>
         <span aria-hidden class="ml-10 md:ml-20 uppercase">{{ nom }}</span>
@@ -38,7 +38,7 @@ defineProps({
       <div class="flex gap-4 text-xs md:text-base flex-wrap justify-center">
         <p
           v-for="tag in tags"
-          class="px-4 py-2 border border-white rounded-full leading-none uppercase"
+          class="px-4 py-2  bg-secondary text-textColor rounded-full leading-none uppercase"
         >
           {{ tag.text }}
         </p>

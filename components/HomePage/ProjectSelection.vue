@@ -8,16 +8,16 @@ defineProps({
 </script>
 
 <template>
-  <section class="border-b pb-10 mb-10 relative w-full overflow-hidden">
-    <div class="flex uppercase gap-10 md:gap-20 text-xs mb-8 md:mb-0">
+  <section class="border-b px-9 pb-10 mb-10 relative w-full overflow-hidden">
+    <div class="flex gap-10 md:gap-20 text-xs mb-8 md:mb-0">
       <div class="flex flex-col">
-        <div data-aos="fade-right" data-aos-duration="1500">
-          <p>Vous pouvez aussi voir mes autres</p>
-          <p>projets dans l'onglet "projets"</p>
-          <p class="mt-2">mes autres créations peuvent être</p>
-          <p>trouvées partout sur le site</p>
-          <p>assurez-vous de les regarder !</p>
-        </div>
+        <p data-aos="fade-right" data-aos-duration="1500" class="flex flex-col">
+          <span>Vous pouvez aussi voir mes autres</span>
+          <span>projets dans l'onglet "projets"</span>
+          <span class="mt-2">mes autres créations peuvent être</span>
+          <span>trouvées partout sur le site</span>
+          <span>assurez-vous de les regarder !</span>
+        </p>
         <div class="flex items-center gap-4 mt-4">
           <img
             src="/Flower.svg"
@@ -37,15 +37,15 @@ defineProps({
           />
         </div>
       </div>
-      <div
+      <p
         class="flex flex-col"
         data-aos="fade-right"
         data-aos-delay="200"
         data-aos-duration="1500"
       >
-        <p>Les projets présentés dans cette</p>
-        <p>section sont de 2022 & 2023</p>
-      </div>
+        <span>Les projets présentés dans cette</span>
+        <span>section sont de 2022 & 2023</span>
+      </p>
     </div>
     <span
       class="absolute bottom-1/4 lg:top-1/4 left-2/3 h-14 w-14 md:h-20 md:w-20 lg:h-32 lg:w-32 border-accent bg-opacity-5 backdrop-blur-md z-10 border-2 rounded-full"

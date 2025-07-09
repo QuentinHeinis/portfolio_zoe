@@ -1,9 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <section class=" border-b px-3 pb-10 mb-10 relative pt-12">
+  <section class="border-b px-9 pb-10 mb-10 relative pt-12">
     <span
       class="absolute top-[15%] left-1/2 h-20 w-20 bg-none bg-opacity-5 backdrop-blur-md z-10 border-2 border-accent rounded-full hidden md:flex"
       data-aos="zoom-in-left"
@@ -38,7 +36,10 @@
         data-aos-delay="300"
         data-aos-duration="2000"
         >Log
-        <img src="/QanticLogo.png" class="h-5 md:h-14 lg:h-20 xl:h-24 brightness-0" />s</span
+        <img
+          src="/QanticLogo.png"
+          class="h-5 md:h-14 lg:h-20 xl:h-24 brightness-0"
+        />s</span
       >
       <span
         class="flex"
@@ -49,7 +50,7 @@
       >
     </h1>
     <div class="flex">
-      <div class="uppercase gap-9 text-xs hidden lg:flex">
+      <div class="gap-9 text-xs hidden lg:flex">
         <div
           class="flex flex-col"
           data-aos="fade-right"
@@ -58,7 +59,7 @@
         >
           <p>Designer graphique français</p>
           <p>Basé en France</p>
-          <p>Montbéliard</p>
+          <p>Lons-le-saunier</p>
         </div>
         <div
           class="flex flex-col"
@@ -79,8 +80,7 @@
         >
           <p>Expérimenté sur Adobe</p>
           <p>Photoshop, Illustrator,</p>
-          <p>InDesign, Audition, XD,</p>
-          <p>Premiere, Figma</p>
+          <p>InDesign, XD</p>
         </div>
       </div>
       <div
@@ -95,5 +95,4 @@
   </section>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
