@@ -43,16 +43,19 @@ const positionElement = (e) => {
   if (cursorStyle === "pointer") {
     cursor.value.style.width = "75px";
     cursor.value.style.height = "75px";
+    cursor.value.style.background = "transparent";
   } else {
     cursor.value.style.width = "";
     cursor.value.style.height = "";
+    cursor.value.style.background = "";
   }
 };
 </script>
 <template>
+  <MyLoader />
   <MyTransition />
   <Header />
-  <main class="text-textColor min-h-screen max-w-[2560px] mx-auto px-6">
+  <main class="text-textColor min-h-screen max-w-[2560px] mx-auto">
     <span ref="cursor" id="cursor"></span>
     <NuxtPage />
   </main>
@@ -75,6 +78,7 @@ const positionElement = (e) => {
   width: 15px;
   height: 15px;
   background: var(--color-primary);
+  border: 2px solid var(--color-primary);
   border-radius: 50%;
 }
 @media (min-width: 640px) {
