@@ -52,7 +52,7 @@ const positionElement = (e) => {
 <template>
   <MyTransition />
   <Header />
-  <main class="text-white min-h-screen max-w-[2560px] mx-auto">
+  <main class="text-textColor min-h-screen max-w-[2560px] mx-auto px-6">
     <span ref="cursor" id="cursor"></span>
     <NuxtPage />
   </main>
@@ -61,7 +61,7 @@ const positionElement = (e) => {
 
 <style>
 #__nuxt {
-  background: #272727;
+  background: var(--color-bgColor);
   cursor: none;
   overflow: clip;
 }
@@ -74,7 +74,7 @@ const positionElement = (e) => {
   pointer-events: none;
   width: 15px;
   height: 15px;
-  background: white;
+  background: var(--color-primary);
   border-radius: 50%;
 }
 @media (min-width: 640px) {
@@ -94,7 +94,7 @@ header {
 
 header.fixedToTop {
   position: fixed;
-  background: #272727;
+  background: var(--color-bgColor);
   top: 0;
   left: 0;
   right: 0;
@@ -103,7 +103,7 @@ header.fixedToTop {
 .hover__effect::after {
   content: "";
   position: absolute;
-  background: white;
+  background: var(--color-primary);
   display: block;
   left: 0;
   width: 100%;
@@ -128,7 +128,7 @@ header.fixedToTop {
   width: calc((100vw - 2560px) / 2);
   left: 0;
   top: 0;
-  background: #272727;
+  background: var(--color-bgColor);
   z-index: 2;
 }
 main::before {

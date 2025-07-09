@@ -38,7 +38,7 @@ router.afterEach(async (to, from) => {
   right: 0;
   height: 100vh;
   transform: translate(0, 100%);
-  background-color: red;
+  background-color: var(--color-accent);
   z-index: 1000;
 }
 </style>

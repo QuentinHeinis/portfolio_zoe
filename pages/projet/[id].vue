@@ -1,4 +1,4 @@
-<script setup>
+<script  setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/all";
@@ -11,6 +11,8 @@ const { data: project } = await useAsyncData(id, async () => {
 });
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+
+const scrollTriggerInstance = ref();
 
 let projet = ref({
   imagePres: project.value.data.image_presentation,
@@ -99,7 +101,7 @@ onMounted(() => {
 
   // initHeroAnimations();
 
-  ScrollTrigger.create({
+  scrollTriggerInstance.value =  ScrollTrigger.create({
     trigger: ".project-page-whitespace",
     start: "top bottom",
     end: "bottom bottom",
@@ -131,6 +133,13 @@ onMounted(() => {
       mainPreviewImg.style.transform = `scale(${mainPreviewImgScale})`;
     },
   });
+});
+
+onBeforeUnmount(() => {
+  if (scrollTriggerInstance.value) {
+    scrollTriggerInstance.value.kill();
+    scrollTriggerInstance.value = null;
+  }
 });
 
 const config = useRuntimeConfig();
@@ -268,7 +277,7 @@ useHead({
     </div>
   </section>
   <section
-    class="flex flex-col h-screen justify-center items-center relative bg-[#272727]"
+    class="flex flex-col h-screen justify-center items-center relative bg-bgColor"
   >
     <h1 class="text-5xl md:text-9xl uppercase">{{ projet.nom }}</h1>
     <p class="normal-case text-center mt-4">{{ projet.softwares }}</p>
@@ -296,7 +305,7 @@ useHead({
     <p class="absolute bottom-1">{{ projet.year }}</p>
   </section>
   <section class="project-page-whitespace"></section>
-  <section class="flex flex-col bg-[#272727] z-10 relative">
+  <section class="flex flex-col bg-bgColor z-10 relative">
     <div class="">
       <img
         :src="projet.imagePres.url"
@@ -328,7 +337,7 @@ useHead({
   overflow: hidden;
   height: 100vh;
   padding: 0;
-  background-color: rgb(27, 25, 25);
+  background-color: var(--color-accent);
   overflow: hidden;
 }
 .project-preview img {

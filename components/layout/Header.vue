@@ -29,10 +29,10 @@ onMounted(() => {
 </script>
 <template>
   <header
-    class="text-white py-3 border-b px-3 flex justify-between items-center fixed top-0 left-0 right-0 max-w-[2560px] mx-auto"
+    class="text-textColor py-3 border-b px-3 flex justify-between items-center fixed top-0 left-0 right-0 max-w-[2560px] mx-auto"
   >
     <NuxtLink to="/" class="hover__effect relative z-10 cursor-pointer"
-      >suihira</NuxtLink
+      >zoe garcia</NuxtLink
     >
     <div class="flex gap-4 uppercase text-xs md:text-base items-center">
       <NuxtLink to="/projet" class="hover__effect relative z-10 cursor-pointer"

@@ -10,7 +10,7 @@ defineProps({
 <template>
   <NuxtLink
     :to="'/project/' + id"
-    class="h-96 lg:h-[28rem] cursor-pointer flex flex-col items-center justify-center relative w-full hover:bg-hover transition-all duration-1000 overflow-hidden bg-fixed bg-center"
+    class="h-96 lg:h-[28rem] cursor-pointer flex flex-col items-center justify-center relative w-full  transition-all duration-1000 overflow-hidden bg-fixed bg-center"
     :style="{ backgroundImage: `url(${image})` }"
   >
     <div
