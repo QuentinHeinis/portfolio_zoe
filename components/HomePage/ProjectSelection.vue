@@ -22,7 +22,7 @@ defineProps({
           <img
             src="/Flower.svg"
             alt=""
-            class="h-8"
+            class="h-8 brightness-0"
             data-aos="fade-right"
             data-aos-duration="1500"
             data-aos-delay="300"
@@ -30,7 +30,7 @@ defineProps({
           <img
             src="/sun.svg"
             alt=""
-            class="h-8"
+            class="h-8 brightness-0"
             data-aos="fade-right"
             data-aos-duration="1500"
             data-aos-delay="600"
@@ -44,7 +44,7 @@ defineProps({
         data-aos-duration="1500"
       >
         <span>Les projets présentés dans cette</span>
-        <span>section sont de 2022 & 2023</span>
+        <span>section sont de 2023 & 2024</span>
       </p>
     </div>
     <span

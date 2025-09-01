@@ -22,7 +22,10 @@ let projet = ref({
   year: project.value.data.year[0].text,
   softwares: project.value.data.programmes[0].text,
 });
+
 onMounted(() => {
+  
+
   window.scrollTo(0, 0);
 
   const images = document.querySelectorAll(".image");
@@ -172,110 +175,75 @@ useHead({
 </script>
 
 <template>
-  <section class="project-preview">
-    <div class="project-preview-wrapper">
-      <div class="preview-col">
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
+ <section class="project-preview">
+  <div class="project-preview-wrapper">
+    <!-- Colonne 1 -->
+    <div class="preview-col">
+      <div class="preview-img">
+        <img :src="projet.images[0 % projet.images.length].image.url" :alt="projet.images[0 % projet.images.length].image.alt" />
       </div>
-      <div class="preview-col">
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
+      <div class="preview-img">
+        <img :src="projet.images[1 % projet.images.length].image.url" :alt="projet.images[1 % projet.images.length].image.alt" />
       </div>
-      <div class="preview-col main-preview-col">
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img main-preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="preview-col">
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="preview-col">
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
-        <div class="preview-img">
-          <img
-            src="https://images.prismic.io/design-portfolio-template/Z-03M3dAxsiBwOal_OSAKA20255.png?auto=format,compress"
-            alt=""
-          />
-        </div>
+      <div class="preview-img">
+        <img :src="projet.images[2 % projet.images.length].image.url" :alt="projet.images[2 % projet.images.length].image.alt" />
       </div>
     </div>
-  </section>
+
+    <!-- Colonne 2 -->
+    <div class="preview-col">
+      <div class="preview-img">
+        <img :src="projet.images[3 % projet.images.length].image.url" :alt="projet.images[3 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[4 % projet.images.length].image.url" :alt="projet.images[4 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[5 % projet.images.length].image.url" :alt="projet.images[5 % projet.images.length].image.alt" />
+      </div>
+    </div>
+
+    <!-- Colonne 3 (main-preview-col) -->
+    <div class="preview-col main-preview-col">
+      <div class="preview-img">
+        <img :src="projet.images[6 % projet.images.length].image.url" :alt="projet.images[6 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img main-preview-img">
+        <img :src="projet.images[7 % projet.images.length].image.url" :alt="projet.images[7 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[8 % projet.images.length].image.url" :alt="projet.images[8 % projet.images.length].image.alt" />
+      </div>
+    </div>
+
+    <!-- Colonne 4 -->
+    <div class="preview-col">
+      <div class="preview-img">
+        <img :src="projet.images[9 % projet.images.length].image.url" :alt="projet.images[9 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[10 % projet.images.length].image.url" :alt="projet.images[10 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[11 % projet.images.length].image.url" :alt="projet.images[11 % projet.images.length].image.alt" />
+      </div>
+    </div>
+
+    <!-- Colonne 5 -->
+    <div class="preview-col">
+      <div class="preview-img">
+        <img :src="projet.images[12 % projet.images.length].image.url" :alt="projet.images[12 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[13 % projet.images.length].image.url" :alt="projet.images[13 % projet.images.length].image.alt" />
+      </div>
+      <div class="preview-img">
+        <img :src="projet.images[14 % projet.images.length].image.url" :alt="projet.images[14 % projet.images.length].image.alt" />
+      </div>
+    </div>
+  </div>
+</section>
+
   <section
     class="flex flex-col h-screen justify-center items-center relative bg-bgColor"
   >
@@ -298,21 +266,14 @@ useHead({
         {{ para.text }}
       </p>
       <div class="flex items-center self-center mt-4 gap-4">
-        <img src="/Flower.svg" alt="" class="object-contain h-8" />
-        <img src="/sun.svg" alt="" class="object-contain h-8" />
+        <img src="/Flower.svg" alt="" class="object-contain h-8 brightness-0" />
+        <img src="/sun.svg" alt="" class="object-contain h-8 brightness-0" />
       </div>
     </div>
     <p class="absolute bottom-1">{{ projet.year }}</p>
   </section>
   <section class="project-page-whitespace"></section>
   <section class="flex flex-col bg-bgColor z-10 relative">
-    <div class="">
-      <img
-        :src="projet.imagePres.url"
-        :alt="projet.imagePres.alt"
-        class="image"
-      />
-    </div>
 
     <div v-for="{ image } in projet.images" class="mt-16">
       <img :src="image.url" :alt="image.alt" class="image" />
@@ -321,7 +282,7 @@ useHead({
       to="/projet"
       class="flex w-fit gap-4 text-2xl md:text-6xl items-center self-end pr-10 pt-8 mb-10 uppercase cursor-pointer"
     >
-      <img src="/ArrowBack.png" alt="" class="h-9 md:h-auto" /> Retour aux
+      <img src="/ArrowBack.png" alt="" class="h-9 md:h-auto brightness-0" /> Retour aux
       projets
     </NuxtLink>
   </section>

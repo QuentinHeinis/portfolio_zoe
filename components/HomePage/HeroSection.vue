@@ -17,9 +17,6 @@
     <h1
       class="flex flex-col text-2xl md:text-6xl lg:text-8xl xl:text-9xl uppercase"
     >
-      <span class="flex" data-aos="fade-up" data-aos-duration="2000"
-        >Web Design</span
-      >
       <span
         class="flex items-center lg:-mt-12"
         data-aos="fade-up"
@@ -35,11 +32,7 @@
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="2000"
-        >Log
-        <img
-          src="/QanticLogo.png"
-          class="h-5 md:h-14 lg:h-20 xl:h-24 brightness-0"
-        />s</span
+        >Illustratrice</span
       >
       <span
         class="flex"
@@ -57,9 +50,9 @@
           data-aos-delay="600"
           data-aos-duration="2000"
         >
-          <p>Designer graphique français</p>
-          <p>Basé en France</p>
-          <p>Lons-le-saunier</p>
+          <p>Designeuse graphique français</p>
+          <p>Basée au Etats-Unis</p>
+          <p>Mishigan</p>
         </div>
         <div
           class="flex flex-col"
@@ -67,9 +60,9 @@
           data-aos-delay="1600"
           data-aos-duration="2000"
         >
-          <p>Designer de 19 ans encore</p>
-          <p>étudiant pour un diplôme</p>
-          <p>espère faire un master en visuel</p>
+          <p>Designeuse de 25 ans</p>
+          <p>Diplomée d'un master </p>
+          <p>chais pas quoi</p>
           <p>et identité de marque</p>
         </div>
         <div
@@ -89,7 +82,7 @@
         data-aos-delay="1050"
         data-aos-duration="2000"
       >
-        Produit
+        de service
       </div>
     </div>
   </section>

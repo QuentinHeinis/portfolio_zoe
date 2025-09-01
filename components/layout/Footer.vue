@@ -1,14 +1,14 @@
 <script setup>
 const footerLinks = [
   {
-    label: "Linkedin",
-    url: "https://fr.linkedin.com/in/quentin-heinis-731ab8223",
-    text : "Quentin Heinis",
+    label: "Instagram",
+    url: "https://www.instagram.com/zoegarcia_design/",
+    text : "@zoegarcia_design",
   },
   {
     label: "Mail",
-    url: "mailto:quentin@heinis.dev",
-    text: "quentin@heinis.dev",
+    url: "mailto:garcia88.zoe@gmail.com",
+    text: "garcia88.zoe@gmail.com",
   },
 ];
 

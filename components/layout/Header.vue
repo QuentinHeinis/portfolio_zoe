@@ -38,9 +38,6 @@ onMounted(() => {
       <NuxtLink to="/projet" class="hover__effect relative z-10 cursor-pointer"
         >Projets</NuxtLink
       >
-      <NuxtLink to="/logos" class="hover__effect relative z-10 cursor-pointer"
-        >Logos</NuxtLink
-      >
     </div>
   </header>
 </template>
