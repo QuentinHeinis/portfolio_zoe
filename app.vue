@@ -34,8 +34,8 @@ onBeforeUnmount(() => {
 const positionElement = (e) => {
   const mouseY = e.clientY;
   const mouseX = e.clientX;
-  cursor.value.style.left = `${mouseX}px`;
-  cursor.value.style.top = `${mouseY}px`;
+cursor.value.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+
 
   const elementUnderCursor = document.elementFromPoint(mouseX, mouseY);
   const cursorStyle = window.getComputedStyle(elementUnderCursor).cursor;
@@ -73,7 +73,9 @@ const positionElement = (e) => {
   position: fixed;
   z-index: 1000;
   transition: left 0.05s, top 0.05s, width 0.2s ease, height 0.2s ease;
+  transform: translate3d(-50%, -50%, 0);
   translate: -50% -50%;
+
   pointer-events: none;
   width: 15px;
   height: 15px;
