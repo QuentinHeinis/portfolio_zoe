@@ -247,7 +247,7 @@ useHead({
   <section
     class="flex flex-col h-screen justify-center items-center relative bg-bgColor"
   >
-    <h1 class="text-5xl md:text-9xl uppercase">{{ projet.nom }}</h1>
+    <h1 class="text-5xl md:text-9xl uppercase text-center">{{ projet.nom }}</h1>
     <p class="normal-case text-center mt-4">{{ projet.softwares }}</p>
     <div class="text-center max-w-xs flex flex-col gap-2 mb-10"></div>
     <div class="flex flex-col">
