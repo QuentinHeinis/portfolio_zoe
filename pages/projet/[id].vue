@@ -275,7 +275,7 @@ useHead({
   <section class="project-page-whitespace"></section>
   <section class="flex flex-col bg-bgColor z-10 relative">
 
-    <div v-for="{ image } in projet.images" class="mt-16">
+    <div v-for="{ image } in projet.images" class="mt-16 max-w-[90%] mx-auto">
       <img :src="image.url" :alt="image.alt" class="image" />
     </div>
     <NuxtLink
