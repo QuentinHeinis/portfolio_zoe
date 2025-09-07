@@ -51,6 +51,7 @@ useHead({
 
 <template>
   <HeroSection/>
+  <MyExpertise/>
   <ProjectSelection :selectedProject />
   <IllustrationSelection :selectedIllustrations />
 </template>
