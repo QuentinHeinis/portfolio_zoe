@@ -12,7 +12,7 @@ defineProps({
     <span
       class="absolute top-1/4 left-1/4 h-20 w-20 border-accent bg-opacity-5 backdrop-blur-md z-10 border-2 rounded-full hidden md:flex"
       data-aos="zoom-in-right" data-aos-delay="700" data-aos-duration="2000"></span>
-    <h2 class="text-5xl md:text-9xl lg:text-[10rem] uppercase leading-none flex flex-col">
+    <h2 class="text-5xl md:text-9xl pt-2 lg:text-[10rem] uppercase leading-none flex flex-col">
       <span data-aos="fade-right" data-aos-duration="2000" class="lg:-mt-7">Illustrations</span>
       <span data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">Sélectionné</span>
     </h2>
