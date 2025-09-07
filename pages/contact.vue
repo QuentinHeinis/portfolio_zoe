@@ -107,7 +107,7 @@ useHead({
 </script>
 
 <template>
-  <section class="px-9 pb-10 mb-10 relative pt-12">
+  <section class="px-9 pb-10 mb-10 relative pt-20">
     <!-- Décos animées -->
     <span
       class="absolute top-[15%] left-1/2 h-20 w-20 bg-none bg-opacity-5 backdrop-blur-md z-10 border-2 border-accent rounded-full hidden md:flex"

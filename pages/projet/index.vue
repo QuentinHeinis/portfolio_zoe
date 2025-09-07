@@ -40,7 +40,7 @@ useHead({
 });
 </script>
 <template>
-  <div class="border-b pb-10 pt-12 px-3">
+  <div class="border-b pb-10 pt-20 px-3">
     <h1
       class="uppercase text-4xl md:text-6xl lg:text-8xl xl:text-9xl w-1/2 pt-4"
     >

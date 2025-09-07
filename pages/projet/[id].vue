@@ -1,4 +1,4 @@
-<script  setup>
+<script setup>
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/all";
@@ -9,6 +9,12 @@ const { client } = usePrismic();
 const { data: project } = await useAsyncData(id, async () => {
   return await client.getByUID("projets", id);
 });
+
+const background = project.value.data.background_color || "#ebcf4d";
+
+console.log(background
+);
+
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -24,7 +30,7 @@ let projet = ref({
 });
 
 onMounted(() => {
-  
+
 
   window.scrollTo(0, 0);
 
@@ -104,7 +110,7 @@ onMounted(() => {
 
   // initHeroAnimations();
 
-  scrollTriggerInstance.value =  ScrollTrigger.create({
+  scrollTriggerInstance.value = ScrollTrigger.create({
     trigger: ".project-page-whitespace",
     start: "top bottom",
     end: "bottom bottom",
@@ -175,94 +181,101 @@ useHead({
 </script>
 
 <template>
- <section class="project-preview">
-  <div class="project-preview-wrapper">
-    <!-- Colonne 1 -->
-    <div class="preview-col">
-      <div class="preview-img">
-        <img :src="projet.images[0 % projet.images.length].image.url" :alt="projet.images[0 % projet.images.length].image.alt" />
+  <section class="project-preview">
+    <div class="project-preview-wrapper">
+      <!-- Colonne 1 -->
+      <div class="preview-col">
+        <div class="preview-img">
+          <img :src="projet.images[0 % projet.images.length].image.url"
+            :alt="projet.images[0 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[1 % projet.images.length].image.url"
+            :alt="projet.images[1 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[2 % projet.images.length].image.url"
+            :alt="projet.images[2 % projet.images.length].image.alt" />
+        </div>
       </div>
-      <div class="preview-img">
-        <img :src="projet.images[1 % projet.images.length].image.url" :alt="projet.images[1 % projet.images.length].image.alt" />
+
+      <!-- Colonne 2 -->
+      <div class="preview-col">
+        <div class="preview-img">
+          <img :src="projet.images[3 % projet.images.length].image.url"
+            :alt="projet.images[3 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[4 % projet.images.length].image.url"
+            :alt="projet.images[4 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[5 % projet.images.length].image.url"
+            :alt="projet.images[5 % projet.images.length].image.alt" />
+        </div>
       </div>
-      <div class="preview-img">
-        <img :src="projet.images[2 % projet.images.length].image.url" :alt="projet.images[2 % projet.images.length].image.alt" />
+
+      <!-- Colonne 3 (main-preview-col) -->
+      <div class="preview-col main-preview-col">
+        <div class="preview-img">
+          <img :src="projet.images[6 % projet.images.length].image.url"
+            :alt="projet.images[6 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img main-preview-img">
+          <img :src="projet.images[7 % projet.images.length].image.url"
+            :alt="projet.images[7 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[8 % projet.images.length].image.url"
+            :alt="projet.images[8 % projet.images.length].image.alt" />
+        </div>
+      </div>
+
+      <!-- Colonne 4 -->
+      <div class="preview-col">
+        <div class="preview-img">
+          <img :src="projet.images[9 % projet.images.length].image.url"
+            :alt="projet.images[9 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[10 % projet.images.length].image.url"
+            :alt="projet.images[10 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[11 % projet.images.length].image.url"
+            :alt="projet.images[11 % projet.images.length].image.alt" />
+        </div>
+      </div>
+
+      <!-- Colonne 5 -->
+      <div class="preview-col">
+        <div class="preview-img">
+          <img :src="projet.images[12 % projet.images.length].image.url"
+            :alt="projet.images[12 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[13 % projet.images.length].image.url"
+            :alt="projet.images[13 % projet.images.length].image.alt" />
+        </div>
+        <div class="preview-img">
+          <img :src="projet.images[14 % projet.images.length].image.url"
+            :alt="projet.images[14 % projet.images.length].image.alt" />
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Colonne 2 -->
-    <div class="preview-col">
-      <div class="preview-img">
-        <img :src="projet.images[3 % projet.images.length].image.url" :alt="projet.images[3 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[4 % projet.images.length].image.url" :alt="projet.images[4 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[5 % projet.images.length].image.url" :alt="projet.images[5 % projet.images.length].image.alt" />
-      </div>
-    </div>
-
-    <!-- Colonne 3 (main-preview-col) -->
-    <div class="preview-col main-preview-col">
-      <div class="preview-img">
-        <img :src="projet.images[6 % projet.images.length].image.url" :alt="projet.images[6 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img main-preview-img">
-        <img :src="projet.images[7 % projet.images.length].image.url" :alt="projet.images[7 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[8 % projet.images.length].image.url" :alt="projet.images[8 % projet.images.length].image.alt" />
-      </div>
-    </div>
-
-    <!-- Colonne 4 -->
-    <div class="preview-col">
-      <div class="preview-img">
-        <img :src="projet.images[9 % projet.images.length].image.url" :alt="projet.images[9 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[10 % projet.images.length].image.url" :alt="projet.images[10 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[11 % projet.images.length].image.url" :alt="projet.images[11 % projet.images.length].image.alt" />
-      </div>
-    </div>
-
-    <!-- Colonne 5 -->
-    <div class="preview-col">
-      <div class="preview-img">
-        <img :src="projet.images[12 % projet.images.length].image.url" :alt="projet.images[12 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[13 % projet.images.length].image.url" :alt="projet.images[13 % projet.images.length].image.alt" />
-      </div>
-      <div class="preview-img">
-        <img :src="projet.images[14 % projet.images.length].image.url" :alt="projet.images[14 % projet.images.length].image.alt" />
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section
-    class="flex flex-col h-screen justify-center items-center relative bg-bgColor"
-  >
+  <section class="flex flex-col h-screen justify-center items-center relative bg-bgColor">
     <h1 class="text-5xl md:text-9xl uppercase text-center">{{ projet.nom }}</h1>
     <p class="normal-case text-center mt-4">{{ projet.softwares }}</p>
     <div class="text-center max-w-xs flex flex-col gap-2 mb-10"></div>
     <div class="flex flex-col">
       <div class="flex gap-2 self-end">
-        <p
-          v-for="tag in projet.tags"
-          class="px-2 py-[2px] text-xs md:text-base rounded-full border"
-        >
+        <p v-for="tag in projet.tags" class="px-2 py-[2px] text-xs md:text-base rounded-full border">
           {{ tag }}
         </p>
       </div>
-      <p
-        v-for="para in projet.desc"
-        class="text-center text-xs md:text-base uppercase mt-2 w-1/2 sm:2/3 mx-auto"
-      >
+      <p v-for="para in projet.desc" class="text-center text-xs md:text-base uppercase mt-2 w-1/2 sm:2/3 mx-auto">
         {{ para.text }}
       </p>
       <div class="flex items-center self-center mt-4 gap-4">
@@ -278,10 +291,8 @@ useHead({
     <div v-for="{ image } in projet.images" class="mt-16 max-w-[90%] mx-auto">
       <img :src="image.url" :alt="image.alt" class="image" />
     </div>
-    <NuxtLink
-      to="/projet"
-      class="flex w-fit gap-4 text-2xl md:text-6xl items-center self-end pr-10 pt-8 mb-10 uppercase cursor-pointer"
-    >
+    <NuxtLink to="/projet"
+      class="flex w-fit gap-4 text-2xl md:text-6xl items-center self-end pr-10 pt-8 mb-10 uppercase cursor-pointer">
       <img src="/ArrowBack.png" alt="" class="h-9 md:h-auto brightness-0" /> Retour aux
       projets
     </NuxtLink>
@@ -294,13 +305,14 @@ useHead({
   top: 0;
   left: 0;
   width: 100%;
-  
+
   overflow: hidden;
   height: 100vh;
   padding: 0;
-  background-color: var(--color-accent);
+  background-color: v-bind(background);
   overflow: hidden;
 }
+
 .project-preview img {
   width: 100%;
   height: 100%;

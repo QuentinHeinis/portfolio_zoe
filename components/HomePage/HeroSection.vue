@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section class="border-b px-9 pb-10 mb-10 relative pt-12">
+  <section class="border-b px-9  pb-10 mb-10 relative pt-20">
     <span
       class="absolute top-[15%] left-1/2 h-20 w-20 bg-none bg-opacity-5 backdrop-blur-md z-10 border-2 border-accent rounded-full hidden md:flex"
       data-aos="zoom-in-left"
