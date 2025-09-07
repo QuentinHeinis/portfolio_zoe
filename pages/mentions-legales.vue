@@ -39,12 +39,12 @@ const data = ref({
       <h2>INFORMATIONS LÉGALES</h2>
       <h3><b>A.</b> Design du site</h3>
       <ul class="undotted">
-        <p>Le site{{ data.url }}a été crée par :</p>
+        <p>Le site{{ data.url }} a été crée par :</p>
         <li><a :href="data.design.url">{{ data.design.name }}</a></li>
       </ul>
       <h3><b>B.</b> Développement du site</h3>
       <ul class="undotted">
-        <p>Le site{{ data.url }}a été crée par :</p>
+        <p>Le site{{ data.url }} a été crée par :</p>
         <li><a :href="data.developer.url">{{ data.developer.name }}</a></li>
       </ul>
       <h3><b>C.</b> Éditeur du site</h3>
@@ -61,7 +61,7 @@ const data = ref({
       </ul>
       <h3><b>E.</b> Hébergeur du site</h3>
       <p>
-        Le site{{ data.url }}est hébergé par&nbsp;:
+        Le site{{ data.url }} est hébergé par&nbsp;:
         <a href="https://www.vercel.com/">Vercel</a>
       </p>
       <h2>CONFIDENTIALITÉ</h2>

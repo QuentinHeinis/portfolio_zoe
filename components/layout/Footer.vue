@@ -7,8 +7,8 @@ const footerLinks = [
   },
   {
     label: "Mail",
-    url: "mailto:garcia88.zoe@gmail.com",
-    text: "garcia88.zoe@gmail.com",
+    url: "mailto:contact@zoegarcia.fr",
+    text: "contact@zoegarcia.fr",
   },
 ];
 

@@ -27,6 +27,8 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+       mail: process.env.NUXT_MAIL,
+    psw: process.env.NUXT_PSW,
     public: {
       siteUrl: process.env.SiteUrl,
     },
