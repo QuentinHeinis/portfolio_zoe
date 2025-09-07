@@ -23,7 +23,7 @@ export default defineEventHandler(async (event) => {
   const data = await readBody(event);
   const options = {
     from: mail,
-    to: 'quentin@heinis.dev',
+    to: mail,
     replyTo: data.email,
     subject: "[zoegarcia.fr] : " + " from : " + data.email,
     text: `
