@@ -12,7 +12,7 @@ const skills = ['Logo', 'Identité visuelle', 'Affiche', 'Print', 'Packaging', '
         </h2>
         <p class="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
         <div class="inline-flex gap-1.5 pr-1.5" v-for="(skill, i) in skills" data-aos="fade-left"
-            :data-aos-delay="300 + i * 100" data-aos-duration="2000">{{ skill }} <span class="inline-flex mt-auto mb-4 h-0.5 w-5 bg-black"
+            :data-aos-delay="300 + i * 100" data-aos-duration="2000">{{ skill }} <span class="inline-flex mt-auto mb-3 md:mb-4 h-0.5 w-5 bg-black"
                 v-if="i < skills.length - 1"></span> <span v-else>...</span>
         </div>
         <div class="inline-flex gap-1" data-aos="fade-left" :data-aos-delay="300 + skills.length * 100" data-aos-duration="2000">Et
