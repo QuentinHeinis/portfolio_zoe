@@ -7,9 +7,9 @@ useSeoMeta({
 
 const data = ref({
   nom: "Zoé Garcia",
-  mail: "",
-  url: "",
-  adresse1: "",
+  mail: "contact@zoegarcia.fr",
+  url: "zoegarcia.fr",
+  adresse1: "Epinal",
   adresse2: "",
   formInfo:['Nom - Prénom', 'Email', 'Entreprise (facultatif)'],
 
@@ -39,16 +39,16 @@ const data = ref({
       <h2>INFORMATIONS LÉGALES</h2>
       <h3><b>A.</b> Design du site</h3>
       <ul class="undotted">
-        <p>Le site{{ data.url }} a été crée par :</p>
+        <p>Le site {{ data.url }} a été crée par :</p>
         <li><a :href="data.design.url">{{ data.design.name }}</a></li>
       </ul>
       <h3><b>B.</b> Développement du site</h3>
       <ul class="undotted">
-        <p>Le site{{ data.url }} a été crée par :</p>
+        <p>Le site {{ data.url }} a été crée par :</p>
         <li><a :href="data.developer.url">{{ data.developer.name }}</a></li>
       </ul>
       <h3><b>C.</b> Éditeur du site</h3>
-      <p>Le site{{ data.url }}est édité par&nbsp;:</p>
+      <p>Le site {{ data.url }} est édité par&nbsp;:</p>
       <ul class="undotted">
         <li>{{ data.nom }}</li>
         <li>{{data.adresse1}}</li>
@@ -61,13 +61,13 @@ const data = ref({
       </ul>
       <h3><b>E.</b> Hébergeur du site</h3>
       <p>
-        Le site{{ data.url }} est hébergé par&nbsp;:
+        Le site {{ data.url }} est hébergé par&nbsp;:
         <a href="https://www.vercel.com/">Vercel</a>
       </p>
       <h2>CONFIDENTIALITÉ</h2>
       <h3><b>A.</b> Données collectées et traitées</h3>
       <p>
-        Les données à caractère personnel collectées sur le site{{ data.url }}sont
+        Les données à caractère personnel collectées sur le site {{ data.url }} sont
         les suivantes&nbsp;:
       </p>
       <ul class="undotted">
@@ -96,7 +96,7 @@ const data = ref({
       </p>
       <h3><b>B.</b> Hébergement des données</h3>
       <p>
-        Tel que mentionné plus haut, le site{{ data.url }}est hébergé par&nbsp;:
+        Tel que mentionné plus haut, le site {{ data.url }}est hébergé par&nbsp;:
         Vercel
       </p>
       <h3><b>C.</b> Le responsable du traitement des données</h3>
