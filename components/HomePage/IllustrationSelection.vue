@@ -34,9 +34,9 @@ defineProps({
     </div>
   </section>
   <section class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] mx-auto px-9 gap-10 mb-10 text-xs">
-    <HomeCardLogo v-for="(ill, index) in selectedIllustrations" :key="ill.uid" :num="index + 1"
-      :image="ill.data.illustration.url" :smallDesc="ill.data.description[0].text" :id="ill.id"
-      :largeDesc="ill.data.large_description" data-aos="fade-up" data-aos-duration="2000" />
+    <IllustrationCard v-for="(ill, index) in selectedIllustrations" :key="ill.uid" :num="index + 1"
+      :image="ill.data.illustration.url" :titre="ill.data.titre[0].text" :id="ill.id"
+      :lien="ill.data.lien" :prix="ill.data.prix[0].text" data-aos="fade-up" data-aos-duration="2000" />
   </section>
   <section
     class="grid px-9 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] mx-auto gap-10 pb-20 border-b text-xs overflow-hidden">

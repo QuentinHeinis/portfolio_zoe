@@ -51,29 +51,10 @@ useHead({
       <img src="/Flower.svg" alt="" class="object-contain h-5 md:h-12 brightness-0" />
       <img src="/sun.svg" alt="" class="object-contain h-5 md:h-12 brightness-0" />
     </div>
-    <div class="flex flex-col gap-10 mt-10">
-      <div
-        v-for="illustrations in data"
-        class="w-full border-t flex flex-wrap justify-between pt-8"
-        :key="illustrations.uid"
-      >
-        <div class="flex flex-col w-1/2 md:justify-end gap-4 cursor-none">
-          <h2
-            class="text-2xl md:text-5xl lg:text-6xl xl:text-7xl uppercase w-fit"
-          >
-            {{ illustrations.data.titre[0].text }}
-          </h2>
-        </div>
-        <div
-          class="w-full md:h-auto md:w-2/5 h-full max-h-[28rem] xl:max-h-[40rem] flex cursor-none overflow-hidden"
-        >
-          <img
-            :src="illustrations.data.illustration.url"
-            :alt="illustrations.data.illustration.alt"
-            class="object-contain w-full h-full"
-          />
-        </div>
-      </div>
-    </div>
+   <section class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] max-w-7xl mx-auto mt-10 px-9 gap-10 mb-10 text-xs">
+    <IllustrationCard v-for="(ill, index) in data" :key="ill.uid" :num="index + 1"
+      :image="ill.data.illustration.url" :titre="ill.data.titre[0].text" :id="ill.id"
+      :lien="ill.data.lien" :prix="ill.data.prix[0].text" data-aos="fade-up" data-aos-duration="2000" />
+  </section>
   </div>
 </template>
