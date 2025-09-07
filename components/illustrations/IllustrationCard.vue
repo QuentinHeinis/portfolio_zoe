@@ -31,7 +31,7 @@ let show = ref(false);
     <div class="max-w-lg py-3">
 
       <p>{{ prix }} €</p>
-      <a :href="lien.url">Acheter</a>
+      <a v-if="lien.url" :href="lien.url">Acheter</a>
     </div>
   </div>
 </template>

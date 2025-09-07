@@ -41,7 +41,7 @@ defineProps({
   <section
     class="grid px-9 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] mx-auto gap-10 pb-20 border-b text-xs overflow-hidden">
     <p class="w-2/3" data-aos="fade-up" data-aos-duration="2000">
-      Ces logos sont des créations personnelles et professionnelles.
+      Ces illustrations sont des créations personnelles et professionnelles.
     </p>
     <p class="w-2/3 flex flex-col gap-2" data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">
       Chaque illustration présentée ici a été conçue dans le cadre de projets créatifs
