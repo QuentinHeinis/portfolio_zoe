@@ -14,9 +14,7 @@ let show = ref(false);
 
 <template>
   <div class="flex flex-col max-w-sm uppercase">
-    <div
-      class="text-textColor border-l-2 h-60 gap-12 flex justify-between relative"
-    >
+    <div class="text-textColor border-l-2 h-60 gap-12 flex justify-between relative">
       <div class="flex flex-col justify-between pl-4">
         <p class="text-2xl">
           {{ num.toString().padStart(2, "0") }}
@@ -28,18 +26,11 @@ let show = ref(false);
       <div class="w-1/2">
         <p class="text-end">{{ smallDesc }}</p>
       </div>
-      <div
-        class="absolute top-[90%] right-0 text-2xl w-8 text-center cursor-pointer"
-        @click="show = !show"
-        v-if="!show"
-      >
+      <div class="absolute top-[90%] right-0 text-2xl w-8 text-center cursor-pointer" @click="show = !show"
+        v-if="!show">
         +
       </div>
-      <div
-        class="absolute top-[90%] right-0 text-2xl w-8 text-center cursor-pointer"
-        @click="show = !show"
-        v-if="show"
-      >
+      <div class="absolute top-[90%] right-0 text-2xl w-8 text-center cursor-pointer" @click="show = !show" v-if="show">
         -
       </div>
     </div>

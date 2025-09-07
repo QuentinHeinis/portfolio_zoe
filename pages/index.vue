@@ -3,9 +3,20 @@ const { client } = usePrismic();
 const { data } = await useAsyncData("projets", async () => {
   return await client.getAllByType("projets");
 });
+const { data : illu } = await useAsyncData("illustrations", async () => {
+  return await client.getAllByType("illustrations");
+});
+
+console.log(illu);
+
+
 const selectedProject = computed(() =>
   data.value.filter((item) => item.tags.includes("selected"))
 );
+const selectedIllustrations = computed(() =>
+  illu.value.filter((item) => item.tags.includes("selected"))
+);
+
 
 const route = useRoute();
 const config = useRuntimeConfig();
@@ -44,4 +55,5 @@ useHead({
 <template>
   <HeroSection/>
   <ProjectSelection :selectedProject />
+  <IllustrationSelection :selectedIllustrations />
 </template>
