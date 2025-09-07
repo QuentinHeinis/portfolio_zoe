@@ -38,7 +38,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   prismic: {
-    endpoint: "https://zoegarcia.cdn.prismic.io/api/v2",
+    endpoint: "https://zoegarciaportfolio.cdn.prismic.io/api/v2",
     preview: false,
     toolbar: false,
   },
