@@ -7,9 +7,6 @@ const { data : illu } = await useAsyncData("illustrations", async () => {
   return await client.getAllByType("illustrations");
 });
 
-console.log(illu);
-
-
 const selectedProject = computed(() =>
   data.value.filter((item) => item.tags.includes("selected"))
 );

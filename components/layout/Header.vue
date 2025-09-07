@@ -31,7 +31,7 @@ onMounted(() => {
   <header
     class="text-textColor py-3 border-b px-3 flex justify-between items-center fixed top-0 left-0 right-0 max-w-[2560px] mx-auto"
   >
-    <NuxtLink to="/" class="relative z-10 cursor-pointer w-12"
+    <NuxtLink to="/" class="relative z-10 cursor-pointer w-12 scale-150"
       ><img src="/logo.png" alt="" class="w-full h-auto"></NuxtLink
     >
     <div class="flex gap-4 uppercase text-xs md:text-base items-center">

@@ -9,9 +9,6 @@ defineProps({
 
 <template>
   <section class="pb-10 mb-10 px-9 relative overflow-hidden">
-    <span
-      class="absolute top-1/4 left-1/4 h-20 w-20 border-accent bg-opacity-5 backdrop-blur-md z-10 border-2 rounded-full hidden md:flex"
-      data-aos="zoom-in-right" data-aos-delay="700" data-aos-duration="2000"></span>
     <h2 class="text-5xl md:text-9xl pt-2 lg:text-[10rem] uppercase leading-none flex flex-col">
       <span data-aos="fade-right" data-aos-duration="2000" class="lg:-mt-7">Illustrations</span>
       <span data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">Sélectionné</span>
@@ -35,8 +32,8 @@ defineProps({
   </section>
   <section class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] mx-auto px-9 gap-10 mb-10 text-xs">
     <IllustrationCard v-for="(ill, index) in selectedIllustrations" :key="ill.uid" :num="index + 1"
-      :image="ill.data.illustration.url" :titre="ill.data.titre[0].text" :id="ill.id"
-      :lien="ill.data.lien" :prix="ill.data.prix[0].text" data-aos="fade-up" data-aos-duration="2000" />
+      :image="ill.data.illustration.url" :titre="ill.data.titre[0].text" :id="ill.id" :lien="ill.data.lien"
+      :prix="ill.data.prix[0].text" data-aos="fade-up" data-aos-duration="2000" />
   </section>
   <section
     class="grid px-9 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] mx-auto gap-10 pb-20 border-b text-xs overflow-hidden">

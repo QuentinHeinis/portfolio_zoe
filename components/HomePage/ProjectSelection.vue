@@ -44,21 +44,10 @@ defineProps({
         data-aos-duration="1500"
       >
         <span>Les projets présentés dans cette</span>
-        <span>section sont de 2023 & 2024</span>
+        <span>section sont de 2023 & plus</span>
       </p>
     </div>
-    <span
-      class="absolute bottom-1/4 lg:top-1/4 left-2/3 h-14 w-14 md:h-20 md:w-20 lg:h-32 lg:w-32 border-accent bg-opacity-5 backdrop-blur-md z-10 border-2 rounded-full"
-      data-aos="zoom-in-left"
-      data-aos-delay="450"
-      data-aos-duration="1500"
-    ></span>
-    <span
-      class="absolute top-2/3 left-[40%] md:h-16 md:w-16 lg:h-24 lg:w-24 border-accent bg-opacity-5 backdrop-blur-md z-10 border-2 rounded-full hidden md:flex"
-      data-aos="zoom-in-left"
-      data-aos-delay="800"
-      data-aos-duration="1500"
-    ></span>
+  
     <h2
       class="text-5xl md:text-9xl lg:text-[10rem] uppercase leading-none text-end flex flex-col"
     >

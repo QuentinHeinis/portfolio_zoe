@@ -2,18 +2,6 @@
 
 <template>
   <section class="border-b px-9  pb-10 mb-10 relative pt-20">
-    <span
-      class="absolute top-[15%] left-1/2 h-20 w-20 bg-none bg-opacity-5 backdrop-blur-md z-10 border-2 border-accent rounded-full hidden md:flex"
-      data-aos="zoom-in-left"
-      data-aos-delay="600"
-      data-aos-duration="2000"
-    ></span>
-    <span
-      class="absolute top-1/3 left-[15%] h-24 w-24 bg-none bg-opacity-5 backdrop-blur-md z-10 border-2 border-accent rounded-full hidden md:flex"
-      data-aos="zoom-in-left"
-      data-aos-delay="400"
-      data-aos-duration="2000"
-    ></span>
     <h1
       class="flex flex-col text-2xl md:text-6xl lg:text-8xl xl:text-9xl uppercase"
     >

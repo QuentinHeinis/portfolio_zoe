@@ -6,7 +6,7 @@ defineProps({
   num: Number,
   titre: String,
   prix: String,
-  lien: Array,
+  lien: Object,
   id: String,
 });
 
@@ -25,7 +25,7 @@ let show = ref(false);
         </div>
       </div>
       <div class="w-1/2">
-        <p class="text-end">{{ smallDesc }}</p>
+        <p class="text-end">{{ prix }}</p>
       </div>
     </div>
     <div class="max-w-lg py-3">

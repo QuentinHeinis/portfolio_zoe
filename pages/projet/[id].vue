@@ -12,9 +12,6 @@ const { data: project } = await useAsyncData(id, async () => {
 
 const background = project.value.data.background_color || "#ebcf4d";
 
-console.log(background
-);
-
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
