@@ -42,42 +42,42 @@
         >Design</span
       >
     </h1>
-    <div class="flex">
-      <div class="gap-9 text-xs hidden lg:flex">
-        <div
-          class="flex flex-col"
+    <div class="flex flex-col md:flex-row">
+      <div class="gap-9 text-xs order-2 md:order-1 lg:flex">
+        <p
+          class="flex flex-col mb-1.5"
           data-aos="fade-right"
           data-aos-delay="600"
           data-aos-duration="2000"
         >
-          <p>Designeuse graphique français</p>
-          <p>Basée au Etats-Unis</p>
-          <p>Mishigan</p>
-        </div>
-        <div
-          class="flex flex-col"
+          <span>Designer graphique français</span>
+          <span>Basée au Etats-Unis</span>
+          <span>Mishigan</span>
+        </p>
+        <p
+          class="flex flex-col mb-1.5"
           data-aos="fade-right"
           data-aos-delay="1600"
           data-aos-duration="2000"
         >
-          <p>Designeuse de 25 ans</p>
-          <p>Diplomée d'un master </p>
-          <p>chais pas quoi</p>
-          <p>et identité de marque</p>
-        </div>
-        <div
-          class="flex flex-col"
+          <span>Chaque projet est construit</span>
+          <span>Avec vous et travaillé</span>
+          <span>Avec soin pour mettre </span>
+          <span>En valeur votre identité</span>
+        </p>
+        <p
+          class="flex flex-col mb-1.5"
           data-aos="fade-right"
           data-aos-delay="2600"
           data-aos-duration="2000"
         >
-          <p>Expérimenté sur Adobe</p>
-          <p>Photoshop, Illustrator,</p>
-          <p>InDesign, XD</p>
-        </div>
+          <span>Expérimenté sur Adobe</span>
+          <span>Photoshop, Illustrator,</span>
+          <span>InDesign, XD</span>
+        </p>
       </div>
       <div
-        class="text-2xl md:text-6xl lg:text-8xl xl:text-9xl lg:-mt-8 uppercase"
+        class="text-2xl md:text-6xl lg:text-8xl xl:text-9xl lg:-mt-8 uppercase order-1"
         data-aos="fade-left"
         data-aos-delay="1050"
         data-aos-duration="2000"
