@@ -43,8 +43,8 @@ defineProps({
         data-aos-delay="200"
         data-aos-duration="1500"
       >
-        <span>Les projets présentés dans cette</span>
-        <span>section sont de 2023 & plus</span>
+        <span>Les projets présentés dans</span>
+        <span>cette section sont de 2023 & plus</span>
       </p>
     </div>
   

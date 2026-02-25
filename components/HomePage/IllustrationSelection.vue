@@ -11,7 +11,7 @@ defineProps({
   <section class="pb-10 mb-10 px-9 relative overflow-hidden">
     <h2 class="text-5xl md:text-9xl pt-2 lg:text-[10rem] uppercase leading-none flex flex-col">
       <span data-aos="fade-right" data-aos-duration="2000" class="lg:-mt-7">Illustrations</span>
-      <span data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">Sélectionné</span>
+      <span data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">Sélectionnées</span>
     </h2>
     <div class="flex flex-col items-end w-4/5 ml-auto mt-4">
       <div class="w-1/2">

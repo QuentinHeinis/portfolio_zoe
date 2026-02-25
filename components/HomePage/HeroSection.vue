@@ -39,7 +39,7 @@
           data-aos-duration="2000"
         >
           <span>Designer graphique français</span>
-          <span>Basée au Etats-Unis</span>
+          <span>basée au Etats-Unis</span>
           <span>Mishigan</span>
         </p>
         <p
@@ -49,9 +49,9 @@
           data-aos-duration="2000"
         >
           <span>Chaque projet est construit</span>
-          <span>Avec vous et travaillé</span>
-          <span>Avec soin pour mettre </span>
-          <span>En valeur votre identité</span>
+          <span>avec vous et travaillé</span>
+          <span>avec soin pour mettre </span>
+          <span>en valeur votre identité</span>
         </p>
         <p
           class="flex flex-col mb-1.5"
