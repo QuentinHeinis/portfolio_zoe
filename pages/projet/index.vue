@@ -64,13 +64,13 @@ useHead({
               v-for="tag in projet.data.tags"
               class="px-2 py-[2px] uppercase flex items-center border rounded-full"
             >
-              {{ tag.text }}
+              {{ tag?.text }}
             </p>
           </div>
           <h2
             class="text-2xl md:text-5xl lg:text-6xl xl:text-7xl uppercase w-fit"
           >
-            {{ projet.data.titre_du_projet[0].text }}
+            {{ projet.data.titre_du_projet[0]?.text }}
           </h2>
         </NuxtLink>
         <NuxtLink
@@ -79,7 +79,7 @@ useHead({
         >
           <img
             :src="projet.data.image_presentation.url"
-            :alt="projet.data.image_presentation.alt"
+            :alt="projet.data.image_presentation?.alt"
             class="object-cover w-full h-full hover:scale-125 transition-all duration-1000"
           />
         </NuxtLink>

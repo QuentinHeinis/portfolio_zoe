@@ -30,7 +30,7 @@ let show = ref(false);
     </div>
     <div class="max-w-lg py-3">
 
-      <p>{{ prix }} €</p>
+      <p v-if="prix">{{ prix }} €</p>
       <a v-if="lien.url" :href="lien.url">Acheter</a>
     </div>
   </div>

@@ -22,8 +22,8 @@ let projet = ref({
   nom: project.value.data.titre_du_projet[0].text,
   desc: project.value.data.description,
   images: project.value.data.images,
-  year: project.value.data.year[0].text,
-  softwares: project.value.data.programmes[0].text,
+  year: project.value.data.year[0]?.text,
+  softwares: project.value.data.programmes[0]?.text,
 });
 
 onMounted(() => {
