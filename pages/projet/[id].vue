@@ -156,11 +156,11 @@ useSeoMeta({
   description: project.value?.data.SEOdescription[0].text,
   ogTitle: project.value?.data.SEOtitle[0].text,
   ogDescription: project.value?.data.SEOdescription[0].text,
-  ogImage: "/favicon.png",
+  ogImage: "/logo.png",
   ogUrl: url,
   twitterTitle: project.value?.data.SEOtitle[0].text,
   twitterDescription: project.value?.data.SEOdescription[0].text,
-  twitterImage: "/favicon.png",
+  twitterImage: "/logo.png",
   twitterCard: "summary",
 });
 useHead({
@@ -171,7 +171,7 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "/favicon.png",
+      href: "/logo.png",
     },
   ],
 });

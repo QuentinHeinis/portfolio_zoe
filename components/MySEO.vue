@@ -17,11 +17,11 @@ useSeoMeta({
   description: data.value?.data.SEOdescription[0].text,
   ogTitle: data.value?.data.SEOtitle[0].text,
   ogDescription: data.value?.data.SEOdescription[0].text,
-  ogImage: "/favicon.png",
+  ogImage: "/logo.png",
   ogUrl: url,
   twitterTitle: data.value?.data.SEOtitle[0].text,
   twitterDescription: data.value?.data.SEOdescription[0].text,
-  twitterImage: "/favicon.png",
+  twitterImage: "/logo.png",
   twitterCard: "summary",
 });
 useHead({
@@ -32,7 +32,7 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "/favicon.png",
+      href: "/logo.png",
     },
   ],
 });

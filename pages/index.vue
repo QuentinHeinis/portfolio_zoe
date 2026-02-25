@@ -3,7 +3,7 @@ const { client } = usePrismic();
 const { data } = await useAsyncData("projets", async () => {
   return await client.getAllByType("projets");
 });
-const { data : illu } = await useAsyncData("illustrations", async () => {
+const { data: illu } = await useAsyncData("illustrations", async () => {
   return await client.getAllByType("illustrations");
 });
 
@@ -27,11 +27,11 @@ useSeoMeta({
   description: desc,
   ogTitle: title,
   ogDescription: desc,
-  ogImage: "/favicon.png",
+  ogImage: "/logo.png",
   ogUrl: url,
   twitterTitle: title,
   twitterDescription: desc,
-  twitterImage: "/favicon.png",
+  twitterImage: "/logo.png",
   twitterCard: "summary",
 });
 useHead({
@@ -42,7 +42,7 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "/favicon.png",
+      href: "/logo.png",
     },
   ],
 });
@@ -50,8 +50,8 @@ useHead({
 </script>
 
 <template>
-  <HeroSection/>
-  <MyExpertise/>
+  <HeroSection />
+  <MyExpertise />
   <ProjectSelection :selectedProject />
   <IllustrationSelection :selectedIllustrations />
 </template>

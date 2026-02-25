@@ -84,11 +84,11 @@ useSeoMeta({
   description: desc,
   ogTitle: title,
   ogDescription: desc,
-  ogImage: "/favicon.png",
+  ogImage: "/logo.png",
   ogUrl: url,
   twitterTitle: title,
   twitterDescription: desc,
-  twitterImage: "/favicon.png",
+  twitterImage: "/logo.png",
   twitterCard: "summary",
 });
 
@@ -100,7 +100,7 @@ useHead({
     {
       rel: "icon",
       type: "image/png",
-      href: "/favicon.png",
+      href: "/logo.png",
     },
   ],
 });
@@ -161,7 +161,7 @@ useHead({
         </div>
 
         <!-- Email et entreprise -->
-        <div class="flex flex-col md:flex-row gap-6" >
+        <div class="flex flex-col md:flex-row gap-6">
           <input type="email" v-model="formData.email" placeholder="Votre email*" required
             class="w-full border-b border-black bg-transparent px-2 py-2 focus:outline-none focus:border-black" />
           <input type="text" v-model="formData.entreprise" placeholder="Entreprise / Association / Particulier"
@@ -170,13 +170,11 @@ useHead({
 
         <!-- Message -->
         <textarea v-model="formData.message" placeholder="Votre message*" required
-          class="w-full border-b border-black bg-transparent px-2 py-2 min-h-[120px] resize-y focus:outline-none focus:border-black"
-          ></textarea>
+          class="w-full border-b border-black bg-transparent px-2 py-2 min-h-[120px] resize-y focus:outline-none focus:border-black"></textarea>
 
         <!-- Bouton d'envoi -->
         <button type="submit" :disabled="buttonState !== 'Envoyer'"
-          class="w-full md:w-fit bg-black text-white px-6 py-3 uppercase cursor-pointer rounded-3xl font-medium transition-opacity duration-200 disabled:opacity-60"
-          >
+          class="w-full md:w-fit bg-black text-white px-6 py-3 uppercase cursor-pointer rounded-3xl font-medium transition-opacity duration-200 disabled:opacity-60">
           {{ buttonState }}
         </button>
 
