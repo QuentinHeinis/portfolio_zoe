@@ -59,7 +59,7 @@
           data-aos-delay="2600"
           data-aos-duration="2000"
         >
-          <span>Expérimenté sur Adobe</span>
+          <span>Expérimentée sur Adobe</span>
           <span>Photoshop, Illustrator,</span>
           <span>InDesign, XD</span>
         </p>
