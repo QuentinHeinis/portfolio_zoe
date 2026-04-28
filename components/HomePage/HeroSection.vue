@@ -20,14 +20,14 @@
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-duration="2000"
-        >Illustratrice</span
+        >Illustration</span
       >
       <span
         class="flex"
         data-aos="fade-up"
         data-aos-delay="450"
         data-aos-duration="2000"
-        >Design</span
+        >Expertise</span
       >
     </h1>
     <div class="flex flex-col md:flex-row">
@@ -38,9 +38,9 @@
           data-aos-delay="600"
           data-aos-duration="2000"
         >
-          <span>Designer graphique français</span>
-          <span>basée au Etats-Unis</span>
-          <span>Mishigan</span>
+          <span>Designer graphique</span>
+          <span>basée au Épinal,</span>
+          <span>dans les Vosges.</span>
         </p>
         <p
           class="flex flex-col mb-1.5"
@@ -48,10 +48,10 @@
           data-aos-delay="1600"
           data-aos-duration="2000"
         >
-          <span>Chaque projet est construit</span>
-          <span>avec vous et travaillé</span>
-          <span>avec soin pour mettre </span>
-          <span>en valeur votre identité</span>
+          <span>Je conçois des réponses</span>
+          <span>créatives adaptées</span>
+          <span>à vos besoins.</span>
+          
         </p>
         <p
           class="flex flex-col mb-1.5"
@@ -59,9 +59,10 @@
           data-aos-delay="2600"
           data-aos-duration="2000"
         >
-          <span>Expérimentée sur Adobe</span>
-          <span>Photoshop, Illustrator,</span>
-          <span>InDesign, XD</span>
+          <span>Chaque projet est construit</span>
+          <span>avec vous et travaillé</span>
+          <span>avec soin pour mettre.</span>
+          <span>en valeur votre identité</span>
         </p>
       </div>
       <div
@@ -70,7 +71,7 @@
         data-aos-delay="1050"
         data-aos-duration="2000"
       >
-        de service
+        créative
       </div>
     </div>
   </section>

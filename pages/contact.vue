@@ -121,23 +121,32 @@ useHead({
     <!-- Contenu -->
     <div class="flex flex-col lg:flex-row gap-8 mt-8">
       <!-- Bloc infos -->
-      <div class="gap-9 text-xs lg:flex">
-        <span class="flex flex-col mb-1.5" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">
-          <span>Designer graphique français</span>
-          <span>Basée au Etats-Unis</span>
-          <span>Mishigan</span>
-        </span>
-        <p class="flex flex-col mb-1.5" data-aos="fade-right" data-aos-delay="1600" data-aos-duration="2000">
-          <span>Chaque projet est construit</span>
-          <span>Avec vous et travaillé</span>
-          <span>Avec soin pour mettre </span>
-          <span>En valeur votre identité</span>
+      <div class="gap-9 text-xs order-2 md:order-1 lg:flex">
+        <p class="flex flex-col mb-1.5" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000">
+          <span>Designer graphique</span>
+          <span>basée au Épinal,</span>
+          <span>dans les Vosges.</span>
         </p>
-        <p class="flex flex-col mb-1.5" data-aos="fade-right" data-aos-delay="2600" data-aos-duration="2000">
-          <span>Expérimenté sur Adobe</span>
-          <span>Photoshop, Illustrator,</span>
-          <span>InDesign, XD</span>
+        <p class="flex flex-col mb-1.5" data-aos="fade-right" data-aos-delay="1200" data-aos-duration="2000">
+          <span>Je conçois des projets</span>
+          <span>visuels pensés pour</span>
+          <span>être clais, cohérents</span>
+          <span>et adaptés à leur contexte</span>
+
         </p>
+        <p class="flex flex-col mb-1.5" data-aos="fade-right" data-aos-delay="1800" data-aos-duration="2000">
+          <span>N'hésitez pas à me contacter</span>
+          <span>pour discuter de votre projet</span>
+        </p>
+        <a href="tel:0624785190" class="flex gap-0.5 mb-1.5" data-aos="fade-right" data-aos-delay="2400"
+          data-aos-duration="2000">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-4">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+          </svg>
+          06 24 78 51 90
+        </a>
       </div>
     </div>
     <div class="flex flex-wrap items-center">

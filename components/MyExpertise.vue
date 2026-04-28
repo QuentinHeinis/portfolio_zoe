@@ -1,22 +1,25 @@
 <script setup>
-const skills = ['Logo', 'Identité visuelle', 'Affiche', 'Print', 'Packaging', 'Réseaux sociaux', 'Site internet']
+const skills = [ 'Identité visuelle','logo',  'édition', 'affiches', 'supports imprimés', 'contenus digitaux']
+const sentence = "J'accompagne également des projets culturels à travers la médiation, la scénographie et le design de service."
 </script>
 <template>
 
     <section class="border-b px-9 pb-10 mb-10 relative w-full overflow-hidden min-h-[30vh]">
         <h2 class="flex flex-col text-2xl md:text-6xl lg:text-8xl xl:text-9xl uppercase">
-            <span class="flex items-center " data-aos="fade-up" data-aos-delay="150" data-aos-duration="2000">Expertise
+            <span class="flex items-center " data-aos="fade-up" data-aos-delay="150" data-aos-duration="2000">Design
             </span>
-            <span class="flex items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">créative
+            <span class="flex items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000">de service
                 :</span>
         </h2>
         <p class="text-xl md:text-3xl lg:text-4xl xl:text-5xl">
-        <div class="inline-flex gap-1.5 pr-1.5" v-for="(skill, i) in skills" data-aos="fade-left"
+            <span v-for="(word, i) in sentence.split(' ')" class="inline-flex gap-1.5 pr-1.5" data-aos="fade-left"
+            :data-aos-delay="300 + i * 100" data-aos-duration="2000">{{ word }}</span>
+        <!-- <div class="inline-flex gap-1.5 pr-1.5" v-for="(skill, i) in skills" data-aos="fade-left"
             :data-aos-delay="300 + i * 100" data-aos-duration="2000">{{ skill }} <span class="inline-flex mt-auto mb-3 md:mb-4 h-0.5 w-5 bg-black"
                 v-if="i < skills.length - 1"></span> <span v-else>...</span>
         </div>
         <div class="inline-flex gap-1" data-aos="fade-left" :data-aos-delay="300 + skills.length * 100" data-aos-duration="2000">Et
-            bien plus selon vos besoins</div>
+            bien plus selon vos besoins</div> -->
         </p>
 
 
