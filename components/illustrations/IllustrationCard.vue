@@ -15,13 +15,13 @@ let show = ref(false);
 
 <template>
   <div class="flex flex-col max-w-sm uppercase">
-    <div class="text-textColor border-l-2 h-60 gap-12 flex justify-between relative">
+    <div class="text-textColor border-l-2 min-h-64 md:min-h-80 h-max gap-12 flex justify-between relative">
       <div class="flex flex-col justify-between pl-4">
         <p class="text-2xl">
           {{ titre }}
         </p>
-        <div class="h-32">
-          <img :src="image" alt="" class="h-full w-full object-contain" />
+        <div class="max-h-64 h-full max-w-3xs md:max-w-xs min-w-64 aspect-video">
+          <img :src="image" alt="" class="h-full w-full object-contain object-bottom-left" />
         </div>
       </div>
       <div class="w-1/2">

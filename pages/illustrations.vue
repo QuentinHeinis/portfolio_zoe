@@ -50,7 +50,7 @@ useHead({
       <img src="/sun.svg" alt="" class="object-contain h-5 md:h-12 brightness-0" />
     </div>
     <section
-      class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] max-w-7xl mx-auto mt-10 px-9 gap-10 mb-10 text-xs">
+      class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] max-w-7xl mx-auto mt-10 px-4 md:px-9 gap-10 mb-10 text-xs">
       <IllustrationCard v-for="(ill, index) in data" :key="ill.uid" :num="index + 1" :image="ill.data.illustration.url"
         :titre="ill.data.titre[0].text" :id="ill.id" :lien="ill.data.lien" :prix="ill.data.prix[0]?.text"
         data-aos="fade-up" data-aos-duration="2000" />
